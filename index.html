@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-list</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="dark">
+    <div class="outer-container">
+        <div class="inner-container">
+            <div class="cont-house">
+                <div class="cont">
+                    <div class="head-container">
+                        <header>
+                            <h1>TaskPulse</h1>
+                        </header>
+                        <div class="icons">
+                            <button type="button" class="icon icon-display"><i class="fa-regular fa-sun"></i></button>
+                            <button type="button" class="icon icon-add"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+    
+                    <div class="contents">
+                        <form class="content-inp" name="form-1">
+                            <input type="text" placeholder="add  a  task  title  . . . ." class="task-title" id="task-title"><br>
+                            <input type="text" placeholder="add  a  task  description  . . . ." class="task-description" id="task-description"><br>
+                            <button type="submit"><span>Add</span><span class="add-icon"><i class="fa-solid fa-plus"></i></span> </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="hide-element">
+                    <input type="checkbox" id="hide">
+                    <label for="hide">Hide task</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom">
+                <form class="search-inp" tabindex="0">
+                    <input type="search" placeholder ="Search task title" id="Search-task-title">
+                    <button type="button" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button type="button">
+                </form>
+        </div>
+
+        <div class="content-list">
+                    <p class="empty-message">Your Task que is currently empty, feel free to add a task.</p>
+                    <!-- <div class="todo-item">
+                        <div class="time">
+                            <span class="day">15</span>
+                            <span class="month">Jun</span>
+                            <span class="set-time"><p>12:08</p> <p>PM</p></span>
+                        </div>
+                        <div class="todo-task">
+                            <span class="task-title">Gym</span>
+                            <span class="task">Go to the gym</span>
+                        </div>
+                        <div class="controllers">
+                            <div class="date">2025-06-15</div>
+                            <div class="button-controllers">
+                                <button type="button" class="check-comp"><i class="fa-solid fa-check"></i></button">
+                                <button type="button" class="pen"><i class="fa-solid fa-pen"></i></button>
+                                <button type="button" class="trash"><i class="fa-solid fa-trash"></i></button>
+                            </div>
+                            <p>Edited: <span>02:05 pm</span></p>
+                        </div>
+                    </div>
+
+                    <div class="todo-item">
+                        <div class="time">
+                            <span class="day">11</span>
+                            <span class="month">Jun</span>
+                            <span class="set-time"><p>02:14</p> <p>PM</p></span>
+                        </div>
+                        <div class="edit">
+                        
+                                <div class="edit-top">
+                                    <input type="text" class ="edit-task-title">
+                                    <input type="text" class ="edit-task-description">
+                                </div>
+                                <div class="edit-bottom">
+                                    <button class="edit-save" type="submit">Save</button>
+                                    <button class="edit-cancel" type="button">Cancel</button>
+                                </div>
+                           
+                        </div>
+                    </div>
+
+                    
+                    <div class="todo-item">
+                        <div class="time">
+                            <span class="day">15</span>
+                            <span class="month">Jun</span>
+                            <span class="set-time"><p>12:08</p> <p>PM</p></span>
+                        </div>
+                        <div class="todo-task">
+                            <span class="task-title">Crypto</span>
+                            <span class="task">Make crypto transactions</span>
+                        </div>
+                        <div class="controllers">
+                            <div class="date">2025-06-15</div>
+                            <div class="button-controllers">
+                                <button type="button" class="check-comp"><i class="fa-solid fa-check"></i></button">
+                                <button type="button" class="pen"><i class="fa-solid fa-pen"></i></button>
+                                <button type="button" class="trash"><i class="fa-solid fa-trash"></i></button>
+                            </div>
+                            <p>Edited: <span>02:05 pm</span></p>
+                        </div>
+                    </div> -->
+  
+        </div>
+                <div class="clear-btn"><button class="clear" type="button">Clear my Tasks</button></div>
+    </div>
+
+    <script type="text/javascript" lang="javascript" src="./engine.js"></script>
+</body>
+</html>
